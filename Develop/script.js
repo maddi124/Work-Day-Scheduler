@@ -1,11 +1,11 @@
 var date = moment().format('dddd, MMMM Do');
     $('#currentDay').text(date);
 
- $(document).ready(function(){
+$(document).ready(function(){
 
 $('.saveBtn').on('click',function(){
     console.log('it was clicked');
-    var text = $(this).siblings('#description').val();
+    var text = $(this).siblings('.description').val();
     var time = $(this).parent().attr('id');
 
     localStorage.setItem(JSON.stringify(time),JSON.stringify(text));
@@ -33,8 +33,6 @@ function timechange(){
     })
 };
 
-timechange();
-});
 
 $('#9am .description').val(localStorage.getItem('9am'));
 $('#10am .description').val(localStorage.getItem('10am'));
@@ -52,6 +50,8 @@ $('#21pm .description').val(localStorage.getItem('21pm'));
 
 
 
+timechange();
+});
 
 
 
