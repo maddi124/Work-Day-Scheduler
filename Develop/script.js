@@ -9,7 +9,7 @@ function timechange(){
         var blocktime = parseInt($(this).attr('id'));
                 console.log(blocktime);
 
-            if(blocktime > hour){
+            if(blocktime < hour){
                 $(this).addClass('past');
             }
             else if (blocktime === hour){
