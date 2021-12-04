@@ -50,7 +50,23 @@ $('#19pm .description').val(localStorage.getItem('19pm'))
 $('#20pm .description').val(localStorage.getItem('20pm'))
 $('#21pm .description').val(localStorage.getItem('21pm'))
 
+$('.delete').on('click',function(){
+console.log('i was clicked ');
 
+$('#9am .description').val(localStorage.removeItem('9am'))
+$('#10am .description').val(localStorage.removeItem('10am'))
+$('#11am .description').val(localStorage.removeItem('11am'))
+$('#12pm .description').val(localStorage.removeItem('12pm'))
+$('#13pm .description').val(localStorage.removeItem('13pm'))
+$('#14pm .description').val(localStorage.removeItem('14pm'))
+$('#15pm .description').val(localStorage.removeItem('15pm'))
+$('#16pm .description').val(localStorage.removeItem('16pm'))
+$('#17pm .description').val(localStorage.removeItem('17pm'))
+$('#18pm .description').val(localStorage.removeItem('18pm'))
+$('#19pm .description').val(localStorage.removeItem('19pm'))
+$('#20pm .description').val(localStorage.removeItem('20pm'))
+$('#21pm .description').val(localStorage.removeItem('21pm'))
+});
 
 
 timechange();
