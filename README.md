@@ -1,6 +1,11 @@
 # Work-Day-Scheduler
+
 # Description
-For this week challenge, We were given the starter code. For this challenge, We had to use Third-Party APIs such as Bootstrap, Moment.js and jQuery. We had to create the JavaScript using jquery and Monment.js. The css file was already created. It only needs to be added into the html class selector for the timeblock section.       
+For this week challenge, We were given the starter code. For this challenge, We had to use Third-Party APIs such as Bootstrap, Moment.js and jQuery. We had to create the JavaScript using jquery and Monment.js. The css file was already created. It only needs to be added into the html class selector for the timeblock section.   
+
+
+https://user-images.githubusercontent.com/92236398/144731418-8aff58bc-9448-4910-8d10-efa989cc0b65.mp4
+
 
 ### What It should do
 The Work-Day Scheduler website is a daily planner that users can use to type events on a certain time of the current day and save the event on the page. Even when the page is refreshed the event should still be on the page.
