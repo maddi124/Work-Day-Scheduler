@@ -4,7 +4,7 @@ var date = moment().format('dddd, MMMM Do YYYY, h:mm a');
 $(document).ready(function(){
 
 $('.saveBtn').on('click',function(){
-    console.log('it was clicked');
+
     var text = $(this).siblings('.description').val();
     var time = $(this).parent().attr('id')
 
@@ -14,12 +14,11 @@ $('.saveBtn').on('click',function(){
 });
 
 function timechange(){
+
     var hour = moment().hour();
-        console.log(hour);
 
     $(".time-block").each(function() {
         var blocktime = parseInt($(this).attr('id'));
-                console.log(blocktime);
 
             if(blocktime < hour){
                 $(this).addClass('past');
@@ -33,8 +32,6 @@ function timechange(){
 
     })
 };
-
-
 
 $('#9am .description').val(localStorage.getItem('9am'))
 $('#10am .description').val(localStorage.getItem('10am'))
@@ -50,8 +47,8 @@ $('#19pm .description').val(localStorage.getItem('19pm'))
 $('#20pm .description').val(localStorage.getItem('20pm'))
 $('#21pm .description').val(localStorage.getItem('21pm'))
 
+// This function will delete every value that's stored in local storage
 $('.delete').on('click',function(){
-console.log('i was clicked ');
 
 $('#9am .description').val(localStorage.removeItem('9am'))
 $('#10am .description').val(localStorage.removeItem('10am'))
@@ -70,6 +67,7 @@ $('#21pm .description').val(localStorage.removeItem('21pm'))
 
 
 timechange();
+
 });
 
 // localStorage.clear();
